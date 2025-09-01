@@ -189,9 +189,9 @@ static ActionEntry actionMap[] = {
         E(OPEN_DIALOG_SONG_PROPERTIES) E(OPEN_DIALOG_CHART_PROPERTIES) E(
             OPEN_DIALOG_CHART_LIST) E(OPEN_DIALOG_NEW_CHART) E(OPEN_DIALOG_ADJUST_SYNC)
             E(OPEN_DIALOG_ADJUST_TEMPO) E(OPEN_DIALOG_ADJUST_TEMPO_SM5) E(
-                OPEN_DIALOG_DANCING_BOT) E(OPEN_DIALOG_GENERATE_NOTES)
-                E(OPEN_DIALOG_TEMPO_BREAKDOWN) E(OPEN_DIALOG_LABEL_BREAKDOWN) E(
-                    OPEN_DIALOG_WAVEFORM_SETTINGS) E(OPEN_DIALOG_CUSTOM_SNAP) E(OPEN_DIALOG_ZOOM)
+                OPEN_DIALOG_DANCING_BOT) E(OPEN_DIALOG_GENERATE_NOTES) E(OPEN_DIALOG_TEMPO_BREAKDOWN)
+                E(OPEN_DIALOG_LABEL_BREAKDOWN) E(OPEN_DIALOG_WAVEFORM_SETTINGS) E(
+                    OPEN_DIALOG_CUSTOM_SNAP) E(OPEN_DIALOG_ZOOM) E(OPEN_DIALOG_PREVIEW_SETTINGS)
 
                     E(TOGGLE_JUMP_TO_NEXT_NOTE) E(TOGGLE_UNDO_REDO_JUMP) E(
                         TOGGLE_TIME_BASED_COPY)
@@ -306,7 +306,7 @@ static ActionEntry actionMap[] = {
                                                                                                                                                                                                                                                                             E(PREVIEW_TOGGLE_ENABLED) E(PREVIEW_TOGGLE_SHOW_BEAT_LINES) E(PREVIEW_TOGGLE_REVERSE_SCROLL)
                                                                                                                                                                                                                                                                                 E(PREVIEW_VIEW_CMOD)
                                                                                                                                                                                                                                                                                     E(PREVIEW_VIEW_XMOD)
-                                                                                                                                                                                                                                                                                        E(PREVIEW_VIEW_XMOD_ALL)
+                                                                                                                                                                                                                                                                                        E(PREVIEW_VIEW_VARIABLE)
 
                                                                                                                                                                                                                                                                                             E(SHOW_SHORTCUTS) E(SHOW_MESSAGE_LOG)
                                                                                                                                                                                                                                                                                                 E(SHOW_DEBUG_LOG)
