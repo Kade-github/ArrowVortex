@@ -41,6 +41,7 @@ struct Editing : public InputHandler
 	virtual void changeLiftsToType(NoteType type) = 0;
 	virtual void changeHoldsToType(NoteType type) = 0;
 	virtual void changeHoldsToRolls() = 0;
+	virtual void changeNoteSide() = 0;
 	virtual void changePlayerNumber() = 0;
 
 	virtual void mirrorNotes(MirrorType type) = 0;

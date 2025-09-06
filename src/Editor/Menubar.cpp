@@ -205,6 +205,7 @@ void init(Item* menu)
 	add(hNoteConvert, CHANGE_HOLDS_TO_STEPS, L"Holds \x2192 Steps");
 	add(hNoteConvert, CHANGE_HOLDS_TO_MINES, L"Holds \x2192 Mines");
 	sep(hNoteConvert);
+	add(hNoteConvert, CHANGE_SIDE, L"Switch Sides");
 	add(hNoteConvert, CHANGE_BETWEEN_PLAYER_NUMBERS, L"Switch Player");
 
 	// Notes > Mirror menu.

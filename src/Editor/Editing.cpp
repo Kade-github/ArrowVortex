@@ -570,6 +570,42 @@ void changeLiftsToType(NoteType type)
 	changeNoteTypeToType(NOTE_LIFT, type, &descs[type]);
 }
 
+void changeNoteSide()
+{
+	Style* style = gStyle->get();
+
+	if (!style)
+	{
+		HudNote("No style is currently active.");
+		return;
+	}
+
+	if (style->numCols != 8)
+	{
+		HudNote("Switch side is only available in a double style.");
+		return;
+	}
+
+	NoteEdit edit;
+	gSelection->getSelectedNotes(edit.add);
+	for (auto& n : edit.add)
+	{
+		if (n.col <= 3)
+		{
+			n.col += 4;
+		}
+		else
+		{
+			n.col -= 4;
+		}
+	}
+
+	static const NotesMan::EditDescription desc = { "Switched side for %1 note.", "Switched side for %1 notes." };
+	gEditing->deleteSelection();
+	gNotes->modify(edit, true, &desc);
+
+}
+
 void changePlayerNumber()
 {
 	int numPlayers = gStyle->getNumPlayers();
